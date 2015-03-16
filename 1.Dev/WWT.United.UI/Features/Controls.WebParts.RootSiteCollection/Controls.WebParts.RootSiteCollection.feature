@@ -1,2 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="004f5922-f874-4ad2-bc23-365678389f22" featureId="004f5922-f874-4ad2-bc23-365678389f22" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="WWT United WebParts (Root Site Collection)" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel" />

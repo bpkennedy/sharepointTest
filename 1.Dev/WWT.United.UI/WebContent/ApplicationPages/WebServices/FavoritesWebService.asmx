@@ -1,1 +1,0 @@
-﻿<%@ WebService Class="WWT.United.UI.FavoritesWebService, WWT.United.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e2138b880074e232" %>

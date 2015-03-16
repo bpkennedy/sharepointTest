@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
-  <Module Name="_SampleWebPart" List="113" Url="_catalogs/wp">
-    <File Path="_SampleWebPart\_SampleWebPart.webpart" Url="_SampleWebPart.webpart" Type="GhostableInLibrary" >
-      <Property Name="Group" Value="WWT" />
-    </File>
-  </Module>
-</Elements>

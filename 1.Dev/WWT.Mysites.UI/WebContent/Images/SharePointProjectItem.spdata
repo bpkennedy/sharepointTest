@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ProjectItem Type="Microsoft.VisualStudio.SharePoint.MappedFolder" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Package" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
-  <Files>
-    <ProjectItemFile Source="animated-overlay.gif" Target="Layouts\1033\Images\United\" Type="TemplateFile" />
-    <ProjectItemFile Source="poshytip-darkgray.png" Target="Layouts\1033\Images\United\" Type="TemplateFile" />
-    <ProjectItemFile Source="poshytip-darkgray_arrows.png" Target="Layouts\1033\Images\United\" Type="TemplateFile" />
-    <ProjectItemFile Source="dwnarrow2.png" Target="Layouts\1033\Images\United\" Type="TemplateFile" />
-  </Files>
-</ProjectItem>
