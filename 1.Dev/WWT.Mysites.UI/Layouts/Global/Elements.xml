@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Global" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="Global\MasterPages\_Sample.master" Url="_Sample.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+    
+    <File Path="Global\MasterPages\United2_Mysites.master" Url="United2_Mysites.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+    
+    <File Path="Global\PageLayouts\_Sample.aspx" Url="_Sample.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Single Column Page" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+    </File>
+  </Module>
+</Elements>

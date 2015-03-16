@@ -1,0 +1,545 @@
+﻿/* ------------------------------------------------------------
+    Title:  Side Navigation Panel
+
+    There are useful CSS hooks you may need...view details in
+    side-nav repo readme.
+--------------------------------------------------------------- */
+/*changed from 28px for U2*/
+.panelIconFixForChrome {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-awesome-font {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+body.snp-open {
+  overflow: hidden;
+}
+/* Wrapper around existing site content
+----------------------------------------------------- */
+#wrapper {
+  background: #fff;
+  min-height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+}
+#wrapper.togglePanel {
+  -webkit-transform: translate(-260px, 0);
+  -moz-transform: translate(-260px, 0);
+  -ms-transform: translate(-260px, 0);
+  -o-transform: translate(-260px, 0);
+  transform: translate(-260px, 0);
+}
+#wrapper.togglePanelFallback {
+  right: 260px;
+}
+.snp-open #wrapper {
+  box-shadow: 1px 0 35px 0 rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+/* Toggle
+----------------------------------------------------- */
+#snp-toggle {
+  color: #4d5052 !important;
+  cursor: pointer !important;
+  float: right !important;
+  height: 50px !important;
+  line-height: 33px !important;
+  vertical-align: middle !important;
+  width: 40px !important;
+  margin: 0 !important;
+  -moz-transition: none 0s ease 0s !important;
+  -o-transition: none 0s ease 0s !important;
+  -webkit-transition: none 0s ease 0s !important;
+  transition: none 0s ease 0s !important;
+}
+#snp-toggle:hover {
+  background-color: #a2a2a2;
+  color: #fff !important;
+}
+.user-name {
+  float: right;
+  height: 50px!important;
+  width: 40px!important;
+  padding: 0!important;
+}
+.user-name:after {
+  font-family: FontAwesome!important;
+  content: "\f0c9";
+  display: block;
+  font-size: 17px!important;
+  margin-top: 7px;
+  text-align: center;
+  position: relative!important;
+}
+@media only screen and (max-width: 480px) {
+  .user-name {
+    display: none;
+  }
+}
+/* Panel
+----------------------------------------------------- */
+#side-nav-panel {
+  background: #373737;
+  border-top: 1px solid #373737;
+  display: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+  width: 260px;
+  /* Panel Tabs
+  -------------------------------- */
+  /* Panel Content
+  -------------------------------- */
+  /* User Logout
+  -------------------------------- */
+  /* Error Messaging
+  -------------------------------- */
+}
+#side-nav-panel .snp-tabs,
+#side-nav-panel .snp-tab-content {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#side-nav-panel .snp-tabs {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+}
+#side-nav-panel .snp-tabs li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #373737;
+  border: 1px solid #424242;
+  border-bottom-color: #2a2a2a;
+  border-right-color: #2a2a2a;
+  color: #838383;
+  cursor: pointer;
+  float: left;
+  font-size: 13px;
+  height: 39px;
+  line-height: 39px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 33%;
+}
+#side-nav-panel .snp-tabs li:first-child:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fbc86e;
+  content: "\f005";
+  font-size: 12px;
+  margin-left: -5px;
+  padding-right: 5px;
+}
+#side-nav-panel .snp-tabs li:last-child {
+  border-right: none;
+}
+#side-nav-panel .snp-tabs li:hover {
+  color: #eaeae5;
+}
+#side-nav-panel .snp-tabs li.active {
+  color: #eaeae5;
+}
+#side-nav-panel .snp-tabs li.active:after {
+  background: #0071b3;
+  border-right: 1px solid #004c73;
+  content: "";
+  height: 2px;
+  left: -1px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+#side-nav-panel .snp-tab-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+}
+#side-nav-panel .snp-tab-content li {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 1px solid #2a2a2a;
+  border-top: 1px solid #424242;
+  font-size: 14px;
+  height: 42px;
+  line-height: 42px;
+  margin: 0;
+  padding: 0 8px 0 6px;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#side-nav-panel .snp-tab-content li:hover {
+  background: #424242;
+  border-top: 1px solid #575757;
+}
+#side-nav-panel .snp-tab-content li i {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  padding: 0 6px 0 2px;
+  vertical-align: middle;
+}
+#side-nav-panel .snp-tab-content li:hover i {
+  color: #fff;
+}
+#side-nav-panel .snp-tab-content li .snp-link {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-right: 25px;
+  white-space: nowrap;
+  width: 100%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -ms-text-overflow: clip \9;
+  text-overflow: clip \9;
+}
+#side-nav-panel .snp-tab-content li .snp-fav {
+  padding: 0 4px 0 8px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: auto;
+}
+#side-nav-panel .snp-tab-content li .snp-fav:hover i {
+  color: #fbc86e;
+}
+#side-nav-panel .snp-tab-content li .snp-fav i {
+  font-size: 16px;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+#side-nav-panel .snp-tab-content li .snp-fav .icon-star {
+  color: #fbc86e;
+}
+#side-nav-panel .snp-tab-content .snp-group,
+#side-nav-panel .snp-tab-content .snp-group:hover {
+  background: #484848;
+  background-image: linear-gradient(bottom, #3e3e3e 9%, #484848 55%);
+  background-image: -moz-linear-gradient(bottom, #3e3e3e 9%, #484848 55%);
+  background-image: -ms-linear-gradient(bottom, #3e3e3e 9%, #484848 55%);
+  background-image: -o-linear-gradient(bottom, #3e3e3e 9%, #484848 55%);
+  background-image: -webkit-linear-gradient(bottom, #3e3e3e 9%, #484848 55%);
+  border-bottom: 1px solid #2a2a2a;
+  border-top: 1px solid #535353;
+  color: #8d8d8d;
+  font-size: 11px;
+  height: 18px;
+  line-height: 18px;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+}
+#side-nav-panel .snp-tab-content .snp-group:before,
+#side-nav-panel .snp-tab-content .snp-group:hover:before {
+  font-family: snpFont;
+  padding-right: 8px;
+}
+#side-nav-panel .snp-tab-content .active,
+#side-nav-panel .snp-tab-content .active:hover {
+  background: #2a2a2a;
+  border-top: none;
+}
+#side-nav-panel .snp-tab-content .active a {
+  color: #eaeae5;
+  cursor: default;
+}
+#side-nav-panel .snp-tab-content .active i,
+#side-nav-panel .snp-tab-content .active:hover i {
+  color: #0071b3;
+}
+#side-nav-panel .snp-tab-content a {
+  color: #c0bfbb;
+  display: inline-block;
+  text-decoration: none;
+}
+#side-nav-panel .snp-tab-content a:hover {
+  color: #eaeae5;
+  text-decoration: none;
+}
+#side-nav-panel .snp-logout {
+  *zoom: 1;
+  border-bottom: 1px solid #2a2a2a;
+  box-shadow: 0 1px 0 #424242;
+  font-size: 12px;
+  padding: 0 2px 0 2px;
+}
+#side-nav-panel .snp-logout:before,
+#side-nav-panel .snp-logout:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+#side-nav-panel .snp-logout:after {
+  clear: both;
+}
+#side-nav-panel .snp-logout a,
+#side-nav-panel .snp-logout i {
+  color: #787878;
+  padding: 1px 10px;
+}
+#side-nav-panel .snp-logout a:before,
+#side-nav-panel .snp-logout i:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#side-nav-panel .snp-logout a:hover,
+#side-nav-panel .snp-logout i:hover {
+  color: #eaeae5;
+  text-decoration: none;
+}
+#side-nav-panel .snp-logout a:active,
+#side-nav-panel .snp-logout i:active {
+  color: #eaeae5;
+}
+#side-nav-panel .snp-logout a {
+  float: left;
+}
+#side-nav-panel .snp-logout a:before {
+  content: "\f011";
+  font-size: 13px;
+  padding-right: 5px;
+}
+#side-nav-panel .snp-logout i {
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-size: 14px;
+}
+#side-nav-panel .snp-logout i:before {
+  content: "\f00d";
+}
+#side-nav-panel .snp-error,
+#side-nav-panel .snp-no-results {
+  color: #c0bfbb;
+  display: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 15px;
+}
+#side-nav-panel .snp-no-results {
+  margin-top: 55px;
+}
+/* Panel Search/Filter
+-------------------------------- */
+#snp-search {
+  border-bottom: 1px solid #2a2a2a;
+  position: relative;
+}
+#snp-search input {
+  background-color: #595959;
+  border: none;
+  border-radius: 16px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  color: #bdbcbc;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 11px 0 12px 8px;
+  margin-left: 11px \9;
+  /* IE6-9 */
+  padding: 5px 12px 5px 29px;
+  padding-top: 8px \9;
+  /* IE(6-9) */
+  width: 78%;
+}
+#snp-search input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+}
+#snp-search input .placeholder-text {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  color: #777;
+}
+#snp-search input:-ms-input-placeholder {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  color: #777;
+}
+#snp-search input:-moz-placeholder {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  color: #777;
+}
+#snp-search input::-moz-placeholder {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  color: #777;
+}
+#snp-search input::-webkit-input-placeholder {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  color: #777;
+}
+#snp-search input:focus:-ms-input-placeholder {
+  color: #595959;
+}
+#snp-search input:focus:-moz-placeholder {
+  color: #595959;
+}
+#snp-search input:focus::-moz-placeholder {
+  color: #595959;
+}
+#snp-search input:focus::-webkit-input-placeholder {
+  color: #595959;
+}
+#snp-search:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #8a8888;
+  content: "\f002";
+  font-size: 15px;
+  font-weight: bold;
+  left: 16px;
+  position: absolute;
+  top: 16px!important;
+  top: 17px \9;
+  /* IE6-9 */
+}
+/* IE Hacks. Oh joy.
+-------------------------------- */
+.snp-open .navbar-fixed-top {
+  position: absolute;
+}
+/*United/Connect Customizations
+----profile pic outside of snp-toggle container...*/
+.welcomemenu {
+  float: left;
+  margin: 13px 5px 13px 13px;
+}
+#unitedToggle {
+  float: right;
+  height: 50px;
+}
+#unitedToggle .user-img {
+  float: left;
+  height: 33px;
+  position: relative;
+  width: 33px;
+}
+#unitedToggle .user-img:before,
+#unitedToggle .user-img:after {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+#unitedToggle .user-img:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  border: 1px solid #888;
+  border-radius: 50%;
+  color: #777;
+  content: "\f007";
+  font-size: 16px;
+  text-align: center;
+}
+#unitedToggle .user-img:after {
+  background-image: url(/apirouter/api/forward/user/picture/small);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+}
+#unitedToggle .user-img:before {
+  color: #777;
+  display: block;
+  float: left;
+  line-height: 30px;
+  vertical-align: middle;
+  border: 1px solid transparent\9;
+  /*IE8 hack - United wants to see the user icon but not the square border.*/
+}
+.s4-devdashboard {
+  display: none;
+  height: 0;
+}
+.snp-logout > .logout {
+  display: none;
+  /*Logout hidden until it is implemented correctly*/
+}
+.welcomemenu .ms-welcomeMenu > .ms-MenuUIPopupBody {
+  top: 44px !important;
+}
+.ms-welcomeMenu {
+  padding-bottom: 14px;
+  padding-bottom: 17px\9;
+  /*IE8 hack because the element is generated by native SharePoint javascript that we don't want to change*/
+}
+/*Hide the sign in as different user from Username drop down*/
+.ms-MenuUIULItem[text="Sign in as Different User"] {
+  display: none!important;
+}
+/*# sourceMappingURL=topBarSideNav.css.map */

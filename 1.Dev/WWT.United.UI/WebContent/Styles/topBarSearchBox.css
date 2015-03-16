@@ -1,0 +1,136 @@
+﻿#tbsb {
+  font-family: "Helvetica", "Trebuchet MS", sans-serif;
+  height: 50px;
+  width: auto;
+  display: inline-block;
+}
+#tbsb > div {
+  width: auto;
+}
+#tbsb p {
+  margin: 0;
+  height: 50px;
+}
+#tbsb ul {
+  color: #555555;
+  list-style: none;
+  margin: 0 0 0 40px;
+  padding: 0;
+  position: absolute;
+  top: 42px;
+  width: 274px;
+  z-index: 20;
+}
+#tbsb .hoverDrop {
+  /*just used to detect active state of li's*/
+}
+#tbsb li {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 31px;
+  position: relative;
+  width: 272px;
+}
+#tbsb li:hover {
+  background-color: #9cb647;
+  border-bottom: 1px solid #9cb647;
+  color: #ffffff;
+}
+#tbsb input[type="text"] {
+  -webkit-appearance: none;
+  background: #ffffff;
+  border: none;
+  color: #333333;
+  cursor: text;
+  float: left;
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  padding: 0;
+  width: 0;
+  margin-top: 10px;
+  line-height: 30px\9;
+}
+#tbsb #unitedSearchSubmit {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: none;
+  color: #4D5052;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  height: 50px;
+  width: 40px;
+}
+#tbsb #unitedSearchSubmit.submitHover {
+  background-color: #9cb647;
+  color: #ffffff;
+}
+#tbsb #unitedSubmitCover {
+  -webkit-appearance: none;
+  border: none;
+  color: #4D5052;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: 'FontAwesome';
+  font-size: 17px;
+  height: 50px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+}
+#tbsb #unitedSubmitCover:hover {
+  color: #ffffff;
+}
+#tbsb #unitedSubmitCover:before {
+  content: "\f002";
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 40px;
+  left: -40px;
+}
+#tbsb span[class^="icon-"]:before {
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  left: 0;
+  line-height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  speak: none;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+}
+#tbsb .icon-finder:before {
+  content: "\f0c0";
+}
+#tbsb .icon-tux:before {
+  content: "\f0e8";
+}
+#tbsb .icon-windows:before {
+  content: "\f022";
+}
+#tbsb .scopeLabel {
+  padding-left: 50px;
+}
+#tbsb .activeScope {
+  background-color: #f2f2f2;
+  border-left: 4px solid #9cb647;
+  width: 269px;
+}
+#tbsb .activeScope.activeScopeBar {
+  background-color: #9cb647;
+  display: block;
+  float: right;
+  min-height: 100%;
+  min-width: 3px;
+}
+/*# sourceMappingURL=topBarSearchBox.css.map */

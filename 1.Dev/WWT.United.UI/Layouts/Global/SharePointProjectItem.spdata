@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Global\" Type="ElementManifest" />
+    <ProjectItemFile Source="MasterPages\_Sample.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="PageLayouts\_Sample.aspx" Target="Global\PageLayouts\" Type="ElementFile" />
+    <ProjectItemFile Source="MasterPages\United2.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="MasterPages\United2_NewsGatorCommunity.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="MasterPages\United2_Search.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="MasterPages\United2_System.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="MasterPages\United2_NewsGatorCommunity_NoFollow.master" Target="Global\MasterPages\" Type="ElementFile" />
+    <ProjectItemFile Source="PageLayouts\TeamBios.aspx" Target="Global\PageLayouts\" Type="ElementFile" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="None" />
+  </ExtensionData>
+</ProjectItem>

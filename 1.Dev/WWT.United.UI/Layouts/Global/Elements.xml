@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Global" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="Global\MasterPages\_Sample.master" Url="_Sample.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+    
+    <File Path="Global\MasterPages\United2.master" Url="United2.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+
+    <File Path="Global\MasterPages\United2_NewsGatorCommunity.master" Url="United2_NewsGatorCommunity.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Community Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Community Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+
+    <File Path="Global\MasterPages\United2_NewsGatorCommunity_NoFollow.master" Url="United2_NewsGatorCommunity_NoFollow.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Community Master Page with No Follow for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Community Master Page with No Follow for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+
+    <File Path="Global\MasterPages\United2_Search.master" Url="United2_Search.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Search Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="Search Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+    
+    <File Path="Global\PageLayouts\_Sample.aspx" Url="_Sample.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Single Column Page" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+    </File>
+
+    <File Path="Global\MasterPages\United2_System.master" Url="United2_System.master" Type="GhostableInLibrary">
+      <Property Name="Title" Value="System Master Page for United 2.0" />
+      <Property Name="MasterPageDescription" Value="System Master Page for United 2.0" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_masterpage_name;" />
+    </File>
+    
+    <File Path="Global\PageLayouts\TeamBios.aspx" Url="TeamBios.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Team Bios Search Results" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+    </File>
+  </Module>
+</Elements>

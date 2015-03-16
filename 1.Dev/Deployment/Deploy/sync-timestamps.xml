@@ -1,0 +1,8 @@
+<config>
+	<folderToCopyPartialAdminShares>
+		<folderToCopyPartialAdminShare>c$\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\LAYOUTS\1033\IMAGES\United</folderToCopyPartialAdminShare>
+		<folderToCopyPartialAdminShare>c$\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\LAYOUTS\1033\STYLES\United</folderToCopyPartialAdminShare>
+		<folderToCopyPartialAdminShare>c$\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\LAYOUTS\United</folderToCopyPartialAdminShare>
+	</folderToCopyPartialAdminShares>
+	<logFileName>sync-timestamps.log</logFileName>
+</config>

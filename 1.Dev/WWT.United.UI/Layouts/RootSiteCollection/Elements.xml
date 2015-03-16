@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootSiteCollection" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="RootSiteCollection\PageLayouts\_Sample.aspx" Url="_Sample.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="United Home Page" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+    </File>
+    <File Path="List Templates\Global Top Bar Alerts.stp" Url="Global Top Bar Alerts.stp" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Global Top Bar Alerts" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+    </File>
+  </Module>
+</Elements>

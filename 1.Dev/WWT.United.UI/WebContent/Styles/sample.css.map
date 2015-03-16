@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "sample.css",
+  "sources": [
+    "sample.less"
+  ],
+  "names": [],
+  "mappings": "AAAA,gBACI;EACI,sBAAA;EACA,WAAA;;AAHR,gBAMI;EACI,WAAA;EACA,aAAA"
+}

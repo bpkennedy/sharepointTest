@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.MappedFolder" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Package" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="ActivityStream.aspx" Target="Layouts\United\ApplicationPages\" Type="TemplateFile" />
+    <ProjectItemFile Source="WebServices\FavoritesWebService.asmx" Target="Layouts\United\ApplicationPages\WebServices\" Type="TemplateFile" />
+    <ProjectItemFile Source="WebServices\FavoritesWebService.cs" Target="Layouts\United\ApplicationPages\WebServices\" Type="TemplateFile" />
+  </Files>
+</ProjectItem>

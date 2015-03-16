@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Web AccessModifier="Public" xmlns="http://schemas.microsoft.com/SharePoint/2009/spmetal">
+  <List Name="Global Top Bar Alerts" />
+
+  <ExcludeOtherLists />
+</Web>
